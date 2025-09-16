@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="52%">
+      <stop offset="0%" stop-color="#101010"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="white" stop-opacity=".0"/>
+      <stop offset="1" stop-color="white" stop-opacity=".06"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="100" cy="100" r="96" fill="url(#g)" stroke="#222" stroke-width="4"/>
+    <circle cx="100" cy="100" r="14" fill="#ffbf3a" />
+    <circle cx="100" cy="100" r="4" fill="#222"/>
+    <!-- grooves -->
+    <g stroke="#1b1b1b" stroke-width="1" fill="none" opacity=".85">
+      <circle cx="100" cy="100" r="86"/>
+      <circle cx="100" cy="100" r="76"/>
+      <circle cx="100" cy="100" r="66"/>
+      <circle cx="100" cy="100" r="56"/>
+      <circle cx="100" cy="100" r="46"/>
+    </g>
+    <!-- soft diagonal gloss -->
+    <path d="M10 20 L90 100" stroke="url(#shine)" stroke-width="18" opacity=".4"/>
+    <!-- star glints -->
+    <g fill="#fff2c2" opacity=".8">
+      <path d="M160 40 l4 10 l10 4 l-10 4 l-4 10 l-4-10 l-10-4 l10-4z"/>
+      <path d="M40 150 l3 8 l8 3 l-8 3 l-3 8 l-3-8 l-8-3 l8-3z"/>
+    </g>
+  </g>
+</svg>

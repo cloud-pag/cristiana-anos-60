@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>De Repente 60 — Cristina</title>
+  <meta name="description" content="Convite virtual — Anos 60 — Festa de 60 anos da Cristina. Confirme sua presença aqui." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="glow"></div>
+    <nav class="topbar">
+      <a href="#sobre" class="brand">De Repente <span>60</span></a>
+      <div class="actions">
+        <button id="musicToggle" class="btn" aria-pressed="false">▶️ Tocar música</button>
+        <a class="btn" href="#rsvp">Confirmar presença</a>
+      </div>
+    </nav>
+
+    <div class="floating-records">
+      <img src="assets/vinyl_red.svg"  class="vinyl v1" alt="vinil vermelho" />
+      <img src="assets/vinyl_blue.svg" class="vinyl v2" alt="vinil azul" />
+      <img src="assets/vinyl_gold.svg" class="vinyl v3" alt="vinil dourado" />
+    </div>
+
+    <div class="hero-content">
+      <!--<img class="disco" src="assets/disco.svg" alt="Disco ball" />-->
+      <img class="disco" src="assets/disco_pink.svg"    alt="Disco Ball Rosa" />
+      <!-- <img class="disco" src="assets/disco_blue.svg"   alt="Disco Ball Azul" /> -->
+      <!-- <img class="disco" src="assets/disco_rainbow.svg" alt="Disco Ball Arco-Íris" /> -->
+      <h1><span>De Repente 60</span><br />Cristina faz 60!</h1>
+      <p class="subtitle">Vista seu traje retrô e venha celebrar com a gente.</p>
+      <ul class="details">
+        <li><strong>Data:</strong> Sexta-feira, 26 de setembro — 20h</li>
+        <li><strong>Local:</strong> Espaço de Eventos Condomínio Park Cidade Nova, Av. Sororó, 1160 — Bairro Aeroporto</li>
+        <li><strong>Tema:</strong> Anos 60 (look retrô liberado!)</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-primary" href="#rsvp">Confirmar presença</a>
+      </div>
+
+      <div class="dancers">
+        <img src="assets/dancer1.svg" class="dancer d1" alt="casal dançando"/>
+        <img src="assets/dancer2.svg" class="dancer d2" alt="dançarina"/>
+        <img src="assets/dancer3.svg" class="dancer d3" alt="dançarino"/>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="grid">
+          <div>
+          <h2>Sobre a festa</h2>
+          <p>Chegou a hora de celebrar os 60 anos da <strong>Cristina</strong> em grande estilo! 
+          Uma noite iluminada pela disco ball, cheia de música e memórias que vão brilhar para sempre.</p>
+          <p>Confirme sua presença agora e tenha seu nome registrado na 
+          <em>Lista da Portaria</em>. O glamour começa na sua confirmação ✨</p>
+          </div>
+          <div class="card">
+            <img src="assets/convite-referencia.jpg" alt="Convite referência" />
+            <small style="display:block;margin-top:.5rem;opacity:.8"></small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section alt">
+      <div class="container">
+        <h2>Confirmar presença</h2>
+        <p>Preencha o formulário abaixo para entrar na lista. Se preferir, <a id="formLink" href="#" target="_blank" rel="noopener">abra o formulário em outra aba</a>.</p>
+
+        <div class="iframe-wrapper">
+          <!-- Substitua o src abaixo pelo 'Incorporar' do seu Google Forms -->
+          <iframe id="rsvpForm"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeGmJ-9j_Bb6uHaVbf-3qkDGp5I6q80Mxr8zmdkH62lfhc-Fw/viewform?usp=sharing&ouid=103717065859868788716/viewform?embedded=true"
+            width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com ❤️ pela família. • Hospedado no <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </div>
+  </footer>
+
+  <audio id="bgMusic" src="assets/musica.mp3" loop></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
